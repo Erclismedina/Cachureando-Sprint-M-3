@@ -30,4 +30,28 @@
         .bold {
             font-weight: bold;
         }
+
+        .total {
+            font-weight: bold;
+          }
+          .total:before {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            margin-right: 5px;
+            text-align: right;
+          }
+          .total:after {
+            content: " $";
+          }
+          .total .amount:before {
+            content: attr(data-amount);
+          }
+          .total:after {
+            content: " $" attr(data-amount);
+          }
+          
     
+
+
+          

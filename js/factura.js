@@ -32,6 +32,7 @@ function calcularTotal() {
     document.querySelector(".iva").innerText=(suma*.19).toFixed(0);
     document.querySelector(".total").innerText=((suma*.19)+suma).toFixed(0);
 }
+
  
 /**
  * Funcion para revisar si hay que añadir una nueva fila
